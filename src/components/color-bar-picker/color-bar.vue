@@ -68,7 +68,7 @@ export default {
     .color-bar-discrete {
         margin: 0;
         display: block;
-        height: 6px;
+        height: 7px;
         width: 100%;
 
         > li {
