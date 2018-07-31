@@ -17,7 +17,7 @@
         </div>
         <g-switch></g-switch>
         <g-logo></g-logo>
-        <g-slider range v-model="arr" show-tooltip></g-slider>
+        <g-slider range v-model="arr" show-tooltip  :min="1" :max="40" :step="0.1"></g-slider>
     </div>
 </template>
 <script>
