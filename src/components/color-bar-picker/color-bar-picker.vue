@@ -53,8 +53,9 @@ import c from '@/utils/color'
 const presetcolor = [
     
     [ '#5182e4', '#ce62d6', '#9bcc66', '#8954d4', '#3fb27e', '#5156b8', '#f7cb4a', '#51b4f1', '#f88d48', '#69d4db', '#f35352', '#d42d6b' ],
-    [ '#d73027','#fc8d59','#fee08b','#ffffbf','#d9ef8b','#91cf60','#1a9850'],
+    [ '#1a9850','#91cf60','#d9ef8b','#ffffbf','#fee08b','#fc8d59','#d73027'],
     [ '#008080','#70a494','#b4c8a8','#f6edbd','#edbb8a','#de8a5a','#ca562c'],
+    [ '#009392','#39b185','#9ccb86','#e9e29c','#eeb479','#e88471','#cf597e'],
 
     //纯色
     [ '#f7fbff','#d6e6f4','#a8cce7','#6baed6','#3a85c0','#195b9c','#08306b'],
@@ -72,8 +73,6 @@ const presetcolor = [
     [ '#a6611a','#cca25c','#e6d3a5','#f5f5f5','#a7dad2','#56b5a6','#018571'],
     [ '#762a83','#af8dc3','#e7d4e8','#f7f7f7','#d9f0d3','#7fbf7b','#1b7837'],
     [ '#c51b7d','#e9a3c9','#fde0ef','#f7f7f7','#e6f5d0','#a1d76a','#4d9221'],
-
-    [ '#009392','#39b185','#9ccb86','#e9e29c','#eeb479','#e88471','#cf597e'],
 
     [ '#f3e79b','#fac484','#f8a07e','#eb7f86','#ce6693','#a059a0','#5c53a5'],
     [ '#fcde9c','#faa476','#f0746e','#e34f6f','#dc3977','#b9257a','#7c1d6f'],
@@ -363,14 +362,14 @@ export default {
 
         .color-bar-list-box {
             width: 100%;
-            height: 185px;
+            height: 221px;
             background: #fff;
             overflow: hidden;
 
             .color-bar-list-wrapper {
                 display: block;
                 width: 100%;
-                height: 148px;
+                height: 184px;
                 overflow: hidden;
 
                 .vue-scrollbar__scrollbar-vertical {
