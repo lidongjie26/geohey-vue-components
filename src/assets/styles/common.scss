@@ -1,3 +1,31 @@
+
+@import "mixin";
+
+
+$dark: #222222;
+.icon {
+    display: inline-block;
+    font-size: inherit;
+
+    &.icon-spin {
+        @include animation( icon-spin 2s infinite linear );
+    }
+
+    &.icon-pulse {
+         @include animation( icon-spin 1s infinite steps(8) );
+    }
+
+    @include keyframes( icon-spin ) {
+        0% {
+            @include rotate(0);
+        }
+        100% {
+            @include rotate(359);
+        }
+    }
+}
+
+
 // color
 $white: #fff;
 $black: #000;

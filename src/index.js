@@ -14,6 +14,7 @@ import Scrollbar from './components/scrollbar'
 import Switch from './components/switch'
 import Logo from './components/logo'
 import Slider from './components/slider'
+import DataView from './components/data-view'
 
 const components = [
     Breadcrumb,
@@ -29,7 +30,8 @@ const components = [
     // Scrollbar,
     Switch,
     Logo,
-    Slider
+    Slider,
+    DataView
 ];
 
 const GlobalComponents = {
@@ -77,5 +79,6 @@ export {
     // Scrollbar,
     Switch,
     Logo,
-    Slider
+    Slider,
+    DataView
 }

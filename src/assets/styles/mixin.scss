@@ -1,0 +1,116 @@
+
+
+@mixin absolute ($top: 0, $right: 0, $bottom: 0, $left: 0) {
+    position: absolute;
+    left: $left;
+    right: $right;
+    top: $top;
+    bottom: $bottom;
+}
+
+@mixin fixed ($top: 0, $right: 0, $bottom: 0, $left: 0) {
+    position: fixed;
+    left: $left;
+    right: $right;
+    top: $top;
+    bottom: $bottom;
+}
+
+@mixin box-sizing ($sizing) {
+    -webkit-box-sizing:$sizing;     
+       -moz-box-sizing:$sizing;
+            box-sizing:$sizing;
+}
+
+@mixin box-shadow ($shadow...) {
+    -moz-box-shadow:$shadow;
+    -webkit-box-shadow:$shadow;
+    box-shadow:$shadow;
+}
+
+@mixin text-overflow () {
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+@mixin filter ($filter) {
+    -webkit-filter:$filter;
+    -moz-filter:$filter;
+    filter:$filter;
+}
+
+@mixin appearance ($value) {
+    appearance: $value;
+    -moz-appearance: $value;
+    -webkit-appearance: $value;
+}
+
+@mixin user-select($select) {
+	-moz-user-select: $select;
+	-o-user-select: $select;
+	-khtml-user-select: $select;
+	-webkit-user-select: $select;
+	-ms-user-select: $select;
+	user-select: $select;
+}
+
+@mixin transition($option...) {
+    -moz-transition: $option;
+    -webkit-transition: $option;
+    -ms-transition: $option;
+    transition: $option;
+}
+
+@mixin animation($option) {
+    -webkit-animation: $option;
+    animation: $option;
+}
+
+@mixin transform($transforms) {
+    -moz-transform: $transforms;
+    -o-transform: $transforms;
+    -ms-transform: $transforms;
+    -webkit-transform: $transforms;
+    transform: $transforms;
+}
+
+// rotate
+@mixin rotate ($deg) {
+    @include transform(rotate(#{$deg}deg));
+}
+ 
+// scale
+@mixin scale($scale) {
+    @include transform(scale($scale));
+} 
+// translate
+@mixin translate ($x, $y) {
+    @include transform(translate($x, $y));
+}
+// skew
+@mixin skew ($x, $y) {
+    @include transform(skew(#{$x}deg, #{$y}deg));
+}
+
+@mixin clearfix {
+	content: "";
+	clear: both;
+	visibility: hidden;
+	display: block;
+}
+
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
